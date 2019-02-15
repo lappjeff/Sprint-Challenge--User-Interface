@@ -27,6 +27,30 @@ header  nav a {
 	color: black;
 }
 
+header nav a.transform:hover {
+	animation-name: fadeIn;
+	animation-duration: 1.5s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+	border-radius: 5px;
+	/* padding: 5px 0; */
+	width: 75px;
+	text-align: center;
+}
+
+@keyframes fadeIn {
+	from {
+		background: inherit;
+		box-shadow: none;
+	}
+
+	to {
+		background: lightgray;
+		box-shadow:0 0 0 5px #ccc
+	}
+}
+
+
 form {
     display: flex;
     flex-direction: column;
