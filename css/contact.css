@@ -65,3 +65,20 @@ form {
     width: 50%;
     cursor: pointer;
 }
+
+.submit:hover {
+    animation-name: slowChange;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes slowChange {
+    from {
+        background: inherit;
+    }
+
+    to {
+        background: #d8d8d2;
+    }
+}
