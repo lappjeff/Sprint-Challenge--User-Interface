@@ -1,0 +1,84 @@
+html {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+/* Nav  */
+ header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 10px 0 30px 0;
+  width: 95%;
+}
+
+header  nav a {
+	text-decoration: none;
+	color: black;
+}
+
+header nav a.transform:hover {
+	animation-name: fadeIn;
+	animation-duration: 1.5s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+	border-radius: 5px;
+	/* padding: 5px 0; */
+	width: 75px;
+	text-align: center;
+}
+
+@keyframes fadeIn {
+	from {
+		background: inherit;
+		box-shadow: none;
+	}
+
+	to {
+		background: lightgray;
+		box-shadow:0 0 0 5px #ccc
+	}
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 0 0 200px;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.submit:hover {
+    animation-name: slowChange;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes slowChange {
+    from {
+        background: inherit;
+    }
+
+    to {
+        background: #d8d8d2;
+    }
+}

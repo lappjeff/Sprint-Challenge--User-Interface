@@ -66,20 +66,23 @@ p {
     line-height: 1.4;
 }
 
+
+/* Container  */
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
-/* Navbar  */
-.container nav {
+/* Nav  */
+ header nav {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: baseline;
 	padding: 50px 0;
+  	width: 95%;
 }
 
-.container nav a {
+header  nav a {
 	text-decoration: none;
 	color: black;
 }
@@ -106,71 +109,58 @@ header nav a.transform:hover {
 		box-shadow:0 0 0 5px #ccc
 	}
 }
+/* Header styles  */
 
+header {
+  border-bottom: 1px dotted black;
+  margin-bottom: 50px;
+}
 .header-img {
 	margin-bottom: 50px;
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+/* Info Area */
+
+.about-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;
+.about-page .info-box {
+  width: 46%;
+  border-bottom: 1px dotted black;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.about-page .bottom-box {
+  width: 95%;
 }
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+.about-page .info-box img {
+  margin-bottom: 15px;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.about-page .info-box button {
+  margin-top: 15px;
+  background: white;
+  border-radius: 10px;
+  border: 1.7px solid black;
+  padding: 5px;
+  width: 35%;
+  cursor: pointer;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
-
+/* Footer */
 footer {
     width: 100%;
     background: black;
 }
 
-.container footer nav {
+footer nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -179,49 +169,7 @@ footer {
     font-size: 14px;
 }
 
-.container footer nav a {
+footer nav a {
     color: white;
     text-decoration: none;
-}
-
-/* Box Colors */
-
-.box-1 {
-	background: teal;
-}
-
-.box-2 {
-	background-color: gold;
-}
-
-.box-3 {
-	background-color: cadetblue;
-}
-
-.box-4 {
-	background-color: coral;
-}
-
-.box-5 {
-	background-color: crimson;
-}
-
-.box-6 {
-	background-color: forestgreen;
-}
-
-.box-7 {
-	background-color: darkorchid;
-}
-
-.box-8 {
-	background-color: hotpink;
-}
-
-.box-9 {
-	background-color: indigo;
-}
-
-.box-10 {
-	background-color: dodgerblue;
 }
